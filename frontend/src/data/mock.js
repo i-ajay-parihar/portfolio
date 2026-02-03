@@ -13,12 +13,10 @@ export const portfolioData = {
   
   about: {
     description: "Passionate Software Developer with 2+ years of experience specializing in backend development, microservices architecture, and AI agent systems. Currently working at Thoughtwin IT Solutions, contributing to cutting-edge AI-powered projects. I love building scalable, efficient solutions and exploring new technologies.",
-    highlights: [
-      "2+ years of professional experience in backend development",
-      "Expertise in Python frameworks: Django, Flask, FastAPI",
-      "Working on AI Agent systems with advanced technologies",
-      "Strong focus on microservices and scalable architecture"
-    ]
+    highlight1: "2+ years of professional experience in backend development",
+    highlight2: "Expertise in Python frameworks: Django, Flask, FastAPI",
+    highlight3: "Working on AI Agent systems with advanced technologies",
+    highlight4: "Strong focus on microservices and scalable architecture"
   },
   
   skills: {
