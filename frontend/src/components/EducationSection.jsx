@@ -11,30 +11,28 @@ const EducationSection = ({ data }) => {
         <div className="section-divider"></div>
         
         <div className="education-grid">
-          {data.education.map((edu) => (
-            <Card key={edu.id} className="education-card">
-              <CardContent className="education-card-content">
-                <div className="education-icon-container">
-                  <GraduationCap size={48} className="education-icon" />
-                </div>
+          <Card className="education-card">
+            <CardContent className="education-card-content">
+              <div className="education-icon-container">
+                <GraduationCap size={48} className="education-icon" />
+              </div>
+              
+              <div className="education-details">
+                <h3 className="education-degree">Master of Computer Applications</h3>
+                <p className="education-abbreviation">(MCA)</p>
+                <p className="education-institution">Gyanodaya Institute of Professional Studies</p>
+                <p className="education-location">Neemuch</p>
                 
-                <div className="education-details">
-                  <h3 className="education-degree">{edu.degree}</h3>
-                  <p className="education-abbreviation">({edu.abbreviation})</p>
-                  <p className="education-institution">{edu.institution}</p>
-                  <p className="education-location">{edu.location}</p>
-                  
-                  <div className="education-footer">
-                    <div className="education-cgpa">
-                      <Award size={20} />
-                      <span>CGPA: <strong>{edu.cgpa}</strong></span>
-                    </div>
-                    <Badge variant="secondary">{edu.duration}</Badge>
+                <div className="education-footer">
+                  <div className="education-cgpa">
+                    <Award size={20} />
+                    <span>CGPA: <strong>8.3</strong></span>
                   </div>
+                  <Badge variant="secondary">Completed</Badge>
                 </div>
-              </CardContent>
-            </Card>
-          ))}
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
