@@ -12,12 +12,22 @@ const AboutSection = ({ data }) => {
             <p className="about-description">{data.about.description}</p>
             
             <div className="about-highlights">
-              {data.about.highlights.map((highlight, index) => (
-                <div key={index} className="highlight-item">
-                  <div className="highlight-bullet"></div>
-                  <span>{highlight}</span>
-                </div>
-              ))}
+              <div className="highlight-item">
+                <div className="highlight-bullet"></div>
+                <span>{data.about.highlight1}</span>
+              </div>
+              <div className="highlight-item">
+                <div className="highlight-bullet"></div>
+                <span>{data.about.highlight2}</span>
+              </div>
+              <div className="highlight-item">
+                <div className="highlight-bullet"></div>
+                <span>{data.about.highlight3}</span>
+              </div>
+              <div className="highlight-item">
+                <div className="highlight-bullet"></div>
+                <span>{data.about.highlight4}</span>
+              </div>
             </div>
           </div>
           

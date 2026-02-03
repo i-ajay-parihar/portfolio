@@ -18,17 +18,42 @@ const SkillsSection = ({ data }) => {
                 <h3 className="skill-card-title">Backend</h3>
               </div>
               <div className="skill-list">
-                {data.skills.backend.map((skill) => (
-                  <div key={skill.name} className="skill-item">
-                    <div className="skill-item-header">
-                      <span className="skill-name">{skill.name}</span>
-                      <span className="skill-level">{skill.level}%</span>
-                    </div>
-                    <div className="skill-bar">
-                      <div className="skill-bar-fill" style={{ width: `${skill.level}%` }}></div>
-                    </div>
+                <div className="skill-item">
+                  <div className="skill-item-header">
+                    <span className="skill-name">Python</span>
+                    <span className="skill-level">90%</span>
                   </div>
-                ))}
+                  <div className="skill-bar">
+                    <div className="skill-bar-fill" style={{ width: '90%' }}></div>
+                  </div>
+                </div>
+                <div className="skill-item">
+                  <div className="skill-item-header">
+                    <span className="skill-name">Django</span>
+                    <span className="skill-level">85%</span>
+                  </div>
+                  <div className="skill-bar">
+                    <div className="skill-bar-fill" style={{ width: '85%' }}></div>
+                  </div>
+                </div>
+                <div className="skill-item">
+                  <div className="skill-item-header">
+                    <span className="skill-name">Flask</span>
+                    <span className="skill-level">80%</span>
+                  </div>
+                  <div className="skill-bar">
+                    <div className="skill-bar-fill" style={{ width: '80%' }}></div>
+                  </div>
+                </div>
+                <div className="skill-item">
+                  <div className="skill-item-header">
+                    <span className="skill-name">FastAPI</span>
+                    <span className="skill-level">85%</span>
+                  </div>
+                  <div className="skill-bar">
+                    <div className="skill-bar-fill" style={{ width: '85%' }}></div>
+                  </div>
+                </div>
               </div>
             </CardContent>
           </Card>
@@ -40,17 +65,33 @@ const SkillsSection = ({ data }) => {
                 <h3 className="skill-card-title">Databases</h3>
               </div>
               <div className="skill-list">
-                {data.skills.databases.map((skill) => (
-                  <div key={skill.name} className="skill-item">
-                    <div className="skill-item-header">
-                      <span className="skill-name">{skill.name}</span>
-                      <span className="skill-level">{skill.level}%</span>
-                    </div>
-                    <div className="skill-bar">
-                      <div className="skill-bar-fill" style={{ width: `${skill.level}%` }}></div>
-                    </div>
+                <div className="skill-item">
+                  <div className="skill-item-header">
+                    <span className="skill-name">PostgreSQL</span>
+                    <span className="skill-level">85%</span>
                   </div>
-                ))}
+                  <div className="skill-bar">
+                    <div className="skill-bar-fill" style={{ width: '85%' }}></div>
+                  </div>
+                </div>
+                <div className="skill-item">
+                  <div className="skill-item-header">
+                    <span className="skill-name">MongoDB</span>
+                    <span className="skill-level">80%</span>
+                  </div>
+                  <div className="skill-bar">
+                    <div className="skill-bar-fill" style={{ width: '80%' }}></div>
+                  </div>
+                </div>
+                <div className="skill-item">
+                  <div className="skill-item-header">
+                    <span className="skill-name">Neo4j</span>
+                    <span className="skill-level">75%</span>
+                  </div>
+                  <div className="skill-bar">
+                    <div className="skill-bar-fill" style={{ width: '75%' }}></div>
+                  </div>
+                </div>
               </div>
             </CardContent>
           </Card>
@@ -62,11 +103,12 @@ const SkillsSection = ({ data }) => {
                 <h3 className="skill-card-title">Tools & Technologies</h3>
               </div>
               <div className="skill-badges">
-                {data.skills.tools.map((skill) => (
-                  <Badge key={skill.name} variant="secondary" className="skill-badge">
-                    {skill.name}
-                  </Badge>
-                ))}
+                <Badge variant="secondary" className="skill-badge">Microservices</Badge>
+                <Badge variant="secondary" className="skill-badge">gRPC</Badge>
+                <Badge variant="secondary" className="skill-badge">MCP Server</Badge>
+                <Badge variant="secondary" className="skill-badge">Schedulers</Badge>
+                <Badge variant="secondary" className="skill-badge">AI Agents</Badge>
+                <Badge variant="secondary" className="skill-badge">Deepgram</Badge>
               </div>
             </CardContent>
           </Card>
