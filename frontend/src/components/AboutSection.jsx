@@ -9,7 +9,18 @@ const AboutSection = ({ data }) => {
         
         <div className="about-grid">
           <div className="about-text">
-            <p className="about-description">{data.about.description}</p>
+            <p className="about-description">
+              {data.about.descriptionIntro}
+              <a
+                href={data.about.companyUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="about-company-link"
+              >
+                {data.about.companyName}
+              </a>
+              {data.about.descriptionOutro}
+            </p>
             
             <div className="about-highlights">
               <div className="highlight-item">
