@@ -10,38 +10,50 @@ const ProjectsSection = ({ data }) => {
         <div className="section-divider"></div>
         
         <div className="projects-grid">
-          <Card className="project-card">
-            <div className="project-image-container">
-              <img src="https://images.unsplash.com/photo-1725800066480-7ccf189e9513?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwzfHxjb2RpbmclMjBkZXZlbG9wZXJ8ZW58MHx8fHwxNzcwMTQ0ODIzfDA&ixlib=rb-4.1.0&q=85" alt="Pidhi" className="project-image" />
-              <div className="project-overlay">
-                <Badge className="project-status-badge">In Development</Badge>
+          {data.projects.map((project) => (
+            <Card className="project-card" key={project.id}>
+              <div className="project-image-container">
+                <img src={project.image} alt={project.name} className="project-image" />
+                <div className="project-overlay">
+                  <Badge className="project-status-badge">{project.status}</Badge>
+                </div>
               </div>
-            </div>
-            <CardContent className="project-card-content">
-              <div className="project-header">
-                <h3 className="project-name">Pidhi</h3>
-                <Badge variant="secondary">Personal Project</Badge>
-              </div>
-              
-              <p className="project-description">A passion project being developed from scratch with a focus on backend architecture, scalability, and clean design principles.</p>
-              
-              <div className="project-highlights">
-                <h4 className="project-highlights-title">Highlights:</h4>
-                <ul className="project-highlights-list">
-                  <li>Built entirely from the ground up</li>
-                  <li>Emphasis on scalable architecture patterns</li>
-                  <li>Clean code and design principles</li>
-                  <li>Modern backend technologies</li>
-                </ul>
-              </div>
-              
-              <div className="project-technologies">
-                <Badge variant="outline" className="tech-badge">Python</Badge>
-                <Badge variant="outline" className="tech-badge">Backend Architecture</Badge>
-                <Badge variant="outline" className="tech-badge">Scalable Systems</Badge>
-              </div>
-            </CardContent>
-          </Card>
+              <CardContent className="project-card-content">
+                <div className="project-header">
+                  <h3 className="project-name">
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-name-link"
+                    >
+                      {project.name}
+                    </a>
+                  </h3>
+                  <Badge variant="secondary" className="project-type-badge">
+                    {project.type}
+                  </Badge>
+                </div>
+                
+                <p className="project-description">{project.description}</p>
+                
+                <div className="project-highlights">
+                  <h4 className="project-highlights-title">Highlights:</h4>
+                  <ul className="project-highlights-list">
+                    {project.highlights.map((highlight) => (
+                      <li key={highlight}>{highlight}</li>
+                    ))}
+                  </ul>
+                </div>
+                
+                <div className="project-technologies">
+                  {project.technologies.map((tech) => (
+                    <Badge variant="outline" className="tech-badge" key={tech}>{tech}</Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>
