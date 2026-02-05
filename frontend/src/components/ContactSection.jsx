@@ -6,7 +6,13 @@ import { Button } from './ui/button';
 const ContactSection = ({ data }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Contact form submission will be available when backend is integrated!');
+    const form = e.currentTarget;
+    const name = form.querySelector('#name')?.value || '';
+    const email = form.querySelector('#email')?.value || '';
+    const message = form.querySelector('#message')?.value || '';
+    const subject = encodeURIComponent(`Portfolio Contact: ${name}`);
+    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+    window.location.href = `mailto:${data.personal.email}?subject=${subject}&body=${body}`;
   };
 
   return (

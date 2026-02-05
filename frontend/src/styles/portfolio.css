@@ -318,6 +318,15 @@
   margin-bottom: 2rem;
 }
 
+.about-company-link {
+  color: #ef4444;
+  text-decoration: none;
+}
+
+.about-company-link:hover {
+  text-decoration: underline;
+}
+
 .about-highlights {
   display: flex;
   flex-direction: column;
@@ -389,19 +398,34 @@
 }
 
 .skill-icon {
-  color: #60a5fa;
+  color: #000000;
 }
 
 .skill-card-title {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #f9fafb;
+  color: #000000;
 }
 
 .skill-list {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+}
+
+.skill-list-text {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.skill-list-item {
+  color: #000000;
+  font-size: 0.98rem;
+  line-height: 1.5;
 }
 
 .skill-item {
@@ -493,14 +517,14 @@
 .experience-company {
   font-size: 1.75rem;
   font-weight: 700;
-  color: #f9fafb;
+  color: #000000;
   margin-bottom: 0.5rem;
 }
 
 .experience-role {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #60a5fa;
+  color: #000000;
   margin-bottom: 0.75rem;
 }
 
@@ -508,29 +532,29 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  color: #9ca3af;
+  color: #000000;
   font-size: 0.95rem;
 }
 
 .experience-separator {
-  color: #4b5563;
+  color: #000000;
 }
 
 .experience-badge {
   background: rgba(34, 197, 94, 0.15);
-  color: #22c55e;
+  color: #000000;
   border: 1px solid rgba(34, 197, 94, 0.3);
   font-weight: 600;
 }
 
 .experience-icon {
-  color: #60a5fa;
+  color: #000000;
   opacity: 0.3;
 }
 
 .experience-description {
   font-size: 1.0625rem;
-  color: #d1d5db;
+  color: #000000;
   margin-bottom: 1.5rem;
   line-height: 1.7;
 }
@@ -542,7 +566,7 @@
 .responsibilities-title {
   font-size: 1rem;
   font-weight: 600;
-  color: #e5e7eb;
+  color: #000000;
   margin-bottom: 1rem;
 }
 
@@ -557,7 +581,7 @@
 .responsibilities-list li {
   position: relative;
   padding-left: 1.5rem;
-  color: #9ca3af;
+  color: #000000;
   line-height: 1.6;
 }
 
@@ -580,7 +604,7 @@
 
 .tech-badge {
   background: rgba(59, 130, 246, 0.1);
-  color: #93c5fd;
+  color: #000000;
   border: 1px solid rgba(59, 130, 246, 0.3);
   font-weight: 500;
   transition: background 0.2s ease, border-color 0.2s ease;
@@ -644,10 +668,14 @@
 
 .project-status-badge {
   background: rgba(34, 197, 94, 0.2);
-  color: #22c55e;
+  color: #000000;
   border: 1px solid rgba(34, 197, 94, 0.4);
   backdrop-filter: blur(8px);
   font-weight: 600;
+}
+
+.project-type-badge {
+  color: #000000;
 }
 
 .project-card-content {
@@ -664,12 +692,21 @@
 .project-name {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #f9fafb;
+  color: #000000;
+}
+
+.project-name-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.project-name-link:hover {
+  text-decoration: underline;
 }
 
 .project-description {
   font-size: 1rem;
-  color: #d1d5db;
+  color: #000000;
   line-height: 1.7;
   margin-bottom: 1.5rem;
 }
@@ -681,7 +718,7 @@
 .project-highlights-title {
   font-size: 0.95rem;
   font-weight: 600;
-  color: #e5e7eb;
+  color: #000000;
   margin-bottom: 0.75rem;
 }
 
@@ -696,7 +733,7 @@
 .project-highlights-list li {
   position: relative;
   padding-left: 1.25rem;
-  color: #9ca3af;
+  color: #000000;
   font-size: 0.9375rem;
 }
 
@@ -748,7 +785,7 @@
 }
 
 .education-icon {
-  color: #60a5fa;
+  color: #000000;
 }
 
 .education-details {
@@ -758,26 +795,26 @@
 .education-degree {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #f9fafb;
+  color: #000000;
   margin-bottom: 0.25rem;
 }
 
 .education-abbreviation {
   font-size: 1rem;
-  color: #9ca3af;
+  color: #000000;
   margin-bottom: 0.75rem;
 }
 
 .education-institution {
   font-size: 1.125rem;
   font-weight: 600;
-  color: #60a5fa;
+  color: #000000;
   margin-bottom: 0.25rem;
 }
 
 .education-location {
   font-size: 0.95rem;
-  color: #9ca3af;
+  color: #000000;
   margin-bottom: 1.25rem;
 }
 
@@ -791,12 +828,12 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #d1d5db;
+  color: #000000;
   font-size: 0.95rem;
 }
 
 .education-cgpa strong {
-  color: #22c55e;
+  color: #000000;
   font-size: 1.125rem;
 }
 
@@ -874,7 +911,7 @@
 .form-group label {
   font-size: 0.95rem;
   font-weight: 600;
-  color: #e5e7eb;
+  color: #000000;
 }
 
 .form-group input,
@@ -883,9 +920,14 @@
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 0.5rem;
-  color: #e5e7eb;
+  color: #000000;
   font-size: 1rem;
   transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #000000;
 }
 
 .form-group input:focus,

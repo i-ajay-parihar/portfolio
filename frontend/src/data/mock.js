@@ -6,13 +6,16 @@ export const portfolioData = {
     tagline: "Building Scalable Backend Solutions & AI-Powered Systems",
     location: "Neemuch, Madhya Pradesh, India",
     experience: "2+ Years",
-    email: "ajay.parihar@example.com",
+    email: "ajayparihar876@gmail.com",
     profileImage: "https://customer-assets.emergentagent.com/job_devajay-showcase/artifacts/i05j6tl0_Gemini_Generated_Image_pol4s6pol4s6pol4.png",
     heroBackground: "https://images.unsplash.com/photo-1644088379091-d574269d422f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzcwMTQ0ODE0fDA&ixlib=rb-4.1.0&q=85"
   },
   
   about: {
-    description: "Passionate Software Developer with 2+ years of experience specializing in backend development, microservices architecture, and AI agent systems. Currently working at Thoughtwin IT Solutions, contributing to cutting-edge AI-powered projects. I love building scalable, efficient solutions and exploring new technologies.",
+    descriptionIntro: "Passionate Software Developer with 2+ years of experience specializing in backend development, microservices architecture, and AI agent systems. Currently working at ",
+    companyName: "Thoughtwin IT Solutions",
+    companyUrl: "https://thoughtwin.com/",
+    descriptionOutro: ", contributing to cutting-edge AI-powered projects. I love building scalable, efficient solutions and exploring new technologies.",
     highlight1: "2+ years of professional experience in backend development",
     highlight2: "Expertise in Python frameworks: Django, Flask, FastAPI",
     highlight3: "Working on AI Agent systems with advanced technologies",
@@ -20,28 +23,93 @@ export const portfolioData = {
   },
   
   skills: {
-    backend: [
-      { name: "Python", level: 90 },
-      { name: "Django", level: 85 },
-      { name: "Flask", level: 80 },
-      { name: "FastAPI", level: 85 }
-    ],
-    databases: [
-      { name: "PostgreSQL", level: 85 },
-      { name: "MongoDB", level: 80 },
-      { name: "Neo4j", level: 75 }
-    ],
-    frontend: [
-      { name: "HTML", level: 80 },
-      { name: "CSS", level: 75 }
-    ],
-    tools: [
-      { name: "Microservices", level: 85 },
-      { name: "gRPC", level: 80 },
-      { name: "MCP Server", level: 80 },
-      { name: "Schedulers", level: 75 },
-      { name: "AI Agents", level: 85 },
-      { name: "Deepgram", level: 75 }
+    categories: [
+      {
+        title: "Backend Development",
+        items: [
+          "Python – Core backend programming, business logic, services",
+          "Django – Secure, scalable backend applications",
+          "Django REST Framework (DRF) – RESTful APIs, authentication, permissions",
+          "FastAPI – High-performance, async APIs",
+          "Flask – Lightweight services and microservices"
+        ]
+      },
+      {
+        title: "Databases & Storage",
+        items: [
+          "PostgreSQL – Relational, transactional data modeling",
+          "MongoDB – NoSQL, unstructured and flexible data",
+          "Redis – Caching, session management, locking",
+          "ElasticSearch – High-performance search and filtering"
+        ]
+      },
+      {
+        title: "Asynchronous & Background Processing",
+        items: [
+          "Celery – Background jobs, scheduled tasks",
+          "Message Queues – Asynchronous workflows (SQS)",
+          "Real-time & Near Real-time Processing – Price updates, notifications"
+        ]
+      },
+      {
+        title: "Cloud & DevOps",
+        items: [
+          "AWS – S3, ECS, SES, SQS",
+          "Google Cloud Platform – App Engine, Analytics services",
+          "Docker – Containerization",
+          "Nginx / Apache – Web servers & reverse proxy",
+          "CI/CD Pipelines – Automated build & deployment"
+        ]
+      },
+      {
+        title: "Integrations & APIs",
+        items: [
+          "Payment Gateways – Stripe, PayPal",
+          "Messaging & Notifications – Twilio, MSG91",
+          "E-commerce – Shopify APIs",
+          "Blockchain / Web3 APIs – Crypto price feeds, transaction verification, wallet validation",
+          "Media & Streaming – Wowza",
+          "Analytics – Google Analytics"
+        ]
+      },
+      {
+        title: "Security & Authentication",
+        items: [
+          "Authentication & Authorization (JWT, role-based access)",
+          "Secure API design",
+          "Session management & timeout handling",
+          "Production issue handling & monitoring"
+        ]
+      },
+      {
+        title: "Architecture & System Design",
+        items: [
+          "REST API design",
+          "Database schema design",
+          "Scalable backend architecture",
+          "Multi-role systems (Admin, User, Advisor)",
+          "High-availability & performance-oriented systems"
+        ]
+      },
+      {
+        title: "Tools & Development Process",
+        items: [
+          "Git – GitHub, Bitbucket",
+          "Agile / Scrum – Sprint planning, delivery",
+          "Code reviews & team mentoring",
+          "Production support & debugging"
+        ]
+      },
+      {
+        title: "Domains",
+        items: [
+          "FinTech",
+          "Crypto / Blockchain",
+          "IoT Platforms",
+          "Marketplaces",
+          "Media & Streaming Applications"
+        ]
+      }
     ]
   },
   
@@ -69,6 +137,7 @@ export const portfolioData = {
     {
       id: 1,
       name: "Pidhi",
+      url: "https://pidhi.in",
       status: "In Development",
       type: "Personal Project",
       description: "A passion project being developed from scratch with a focus on backend architecture, scalability, and clean design principles.",
