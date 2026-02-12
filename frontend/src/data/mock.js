@@ -1,4 +1,6 @@
 // Mock data for Ajay Parihar's portfolio
+import profileImage from "./ajay.jpg";
+import familyTreeImage from "./family_tree.png";
 export const portfolioData = {
   personal: {
     name: "Ajay Parihar",
@@ -7,6 +9,7 @@ export const portfolioData = {
     location: "Neemuch, Madhya Pradesh, India",
     experience: "2+ Years",
     email: "ajayparihar876@gmail.com",
+    profileImage: profileImage,
     heroBackground: "https://images.unsplash.com/photo-1644088379091-d574269d422f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzcwMTQ0ODE0fDA&ixlib=rb-4.1.0&q=85"
   },
   
@@ -147,7 +150,7 @@ export const portfolioData = {
         "Modern backend technologies"
       ],
       technologies: ["Python", "Backend Architecture", "Scalable Systems"],
-      image: "https://images.unsplash.com/photo-1725800066480-7ccf189e9513?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwzfHxjb2RpbmclMjBkZXZlbG9wZXJ8ZW58MHx8fHwxNzcwMTQ0ODIzfDA&ixlib=rb-4.1.0&q=85"
+      image: familyTreeImage
     }
   ],
   
