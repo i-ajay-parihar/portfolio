@@ -7,7 +7,6 @@ export const portfolioData = {
     location: "Neemuch, Madhya Pradesh, India",
     experience: "2+ Years",
     email: "ajayparihar876@gmail.com",
-    profileImage: "https://customer-assets.emergentagent.com/job_devajay-showcase/artifacts/i05j6tl0_Gemini_Generated_Image_pol4s6pol4s6pol4.png",
     heroBackground: "https://images.unsplash.com/photo-1644088379091-d574269d422f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzcwMTQ0ODE0fDA&ixlib=rb-4.1.0&q=85"
   },
   

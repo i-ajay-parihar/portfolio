@@ -1,0 +1,8 @@
+[build]
+  base = "frontend"
+  command = "yarn build"
+  publish = "build"
+
+[context.production.environment]
+  # Set this in the Netlify UI if you have a backend API.
+  # REACT_APP_BACKEND_URL = "https://api.example.com"
