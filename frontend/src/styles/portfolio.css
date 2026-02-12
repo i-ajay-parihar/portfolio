@@ -696,11 +696,13 @@
 }
 
 .project-name-link {
-  color: #000000;
+  color: #60a5fa;
   text-decoration: none;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }
 
 .project-name-link:hover {
+  color: #93c5fd;
   text-decoration: underline;
 }
 
